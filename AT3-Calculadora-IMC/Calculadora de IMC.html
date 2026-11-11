@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de IMC</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif']},colors:{brand:{50:'#f0f9ff',100:'#e0f2fe',500:'#0ea5e9',600:'#0284c7',700:'#0369a1'}}}}};</script>
+<style>
+body{font-family:Inter,sans-serif}.category-row{transition:all .25s ease-in-out}.active-category{font-weight:700;transform:scale(1.01);box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}
+</style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 flex flex-col justify-between antialiased">
+<header class="bg-white border-b border-slate-200 sticky top-0 z-10"><div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between"><div class="flex items-center gap-3"><div class="bg-brand-500 text-white p-3 rounded-xl"><i class="fa-solid fa-heart-pulse text-xl"></i></div><div><h1 class="text-xl font-bold text-slate-900">Calculadora de IMC</h1><p class="text-xs text-slate-500">Índice de Massa Corporal para Adultos</p></div></div><span class="text-xs font-semibold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full">Referência para adultos</span></div></header>
+<main class="max-w-5xl mx-auto px-4 py-8 w-full flex-grow"><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<section class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
+<h2 class="text-lg font-bold text-slate-900 mb-1"><i class="fa-solid fa-sliders text-brand-500"></i> Informe seus dados</h2><p class="text-sm text-slate-500 mb-6">Insira seu peso e sua altura para calcular o IMC.</p>
+<div id="error-alert" class="hidden mb-6 p-4 bg-red-50 border-l-4 border-red-500 rounded-r-lg text-red-700 text-sm"><span id="error-message"></span></div>
+<form id="imc-form" class="space-y-5">
+<label class="block text-sm font-medium text-slate-700">Peso (kg)<input id="peso" type="text" inputmode="decimal" placeholder="Ex.: 70,5" required class="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900"></label>
+<label class="block text-sm font-medium text-slate-700">Altura (metros ou cm)<input id="altura" type="text" inputmode="decimal" placeholder="Ex.: 1,75 ou 175" required class="mt-2 block w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900"></label>
+<div class="pt-2 flex gap-3"><button type="submit" class="flex-1 bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3 px-4 rounded-xl"><i class="fa-solid fa-calculator"></i> Calcular IMC</button><button type="button" onclick="resetCalculator()" title="Limpar formulário" class="bg-slate-100 hover:bg-slate-200 text-slate-600 px-4 rounded-xl"><i class="fa-solid fa-rotate-right"></i></button></div>
+</form></section>
+<section class="lg:col-span-7 space-y-6">
+<div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
+<div id="result-placeholder" class="text-center py-8"><div class="w-16 h-16 bg-brand-50 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-500"><i class="fa-solid fa-chart-line text-2xl"></i></div><h3 class="font-semibold text-slate-800">Aguardando dados...</h3><p class="text-sm text-slate-500">Preencha peso e altura para ver o resultado.</p></div>
+<div id="result-content" class="hidden"><div class="flex flex-col sm:flex-row items-center justify-between pb-6 border-b gap-4"><div><span class="text-xs font-bold uppercase text-slate-400">Seu resultado</span><div class="flex items-baseline gap-2"><span id="imc-value" class="text-5xl font-extrabold text-slate-900">00,0</span><span class="text-sm text-slate-500">kg/m²</span></div></div><div id="status-badge" class="px-4 py-2 rounded-xl text-sm font-bold border"><span id="imc-classification"></span></div></div><div class="mt-6"><h4 class="font-semibold text-slate-800">Resumo da avaliação</h4><p id="imc-description" class="text-sm text-slate-600"></p></div></div></div>
+<div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200"><h3 class="font-bold text-slate-900 mb-4">Tabela de referência (adultos)</h3><div class="overflow-x-auto"><table class="w-full text-left text-sm"><thead><tr class="text-xs uppercase text-slate-400 border-b"><th class="pb-3">Classificação</th><th class="pb-3">Faixa de IMC</th></tr></thead><tbody class="divide-y">
+<tr id="row-baixo" class="category-row"><td class="py-3 px-2">Baixo peso</td><td class="py-3 px-2">Menor que 18,5</td></tr><tr id="row-normal" class="category-row"><td class="py-3 px-2">Peso normal</td><td class="py-3 px-2">18,5 a 24,9</td></tr><tr id="row-sobrepeso" class="category-row"><td class="py-3 px-2">Sobrepeso</td><td class="py-3 px-2">25,0 a 29,9</td></tr><tr id="row-obesidade1" class="category-row"><td class="py-3 px-2">Obesidade grau I</td><td class="py-3 px-2">30,0 a 34,9</td></tr><tr id="row-obesidade2" class="category-row"><td class="py-3 px-2">Obesidade grau II</td><td class="py-3 px-2">35,0 a 39,9</td></tr><tr id="row-obesidade3" class="category-row"><td class="py-3 px-2">Obesidade grau III</td><td class="py-3 px-2">40,0 ou mais</td></tr>
+</tbody></table></div></div></section></div></main>
+<footer class="bg-white border-t mt-12 py-6 text-center text-xs text-slate-500"><p>Ferramenta informativa. Consulte um médico ou nutricionista para avaliação individual.</p></footer>
+<script>
+const categorias=[
+{limite:18.5,nome:'Baixo peso',descricao:'O resultado está abaixo da faixa de referência. Procure orientação profissional para avaliar seu estado nutricional.',id:'row-baixo',cor:'bg-sky-50 text-sky-800 border-sky-200'},
+{limite:25,nome:'Peso normal',descricao:'O resultado está na faixa considerada adequada pela referência de IMC para adultos.',id:'row-normal',cor:'bg-emerald-50 text-emerald-800 border-emerald-200'},
+{limite:30,nome:'Sobrepeso',descricao:'O resultado está na faixa de sobrepeso. Um profissional pode ajudar a avaliar seu contexto de saúde.',id:'row-sobrepeso',cor:'bg-amber-50 text-amber-800 border-amber-200'},
+{limite:35,nome:'Obesidade grau I',descricao:'O resultado está na faixa de obesidade grau I. Considere conversar com um profissional de saúde.',id:'row-obesidade1',cor:'bg-orange-50 text-orange-800 border-orange-200'},
+{limite:40,nome:'Obesidade grau II',descricao:'O resultado está na faixa de obesidade grau II. Busque acompanhamento profissional.',id:'row-obesidade2',cor:'bg-red-50 text-red-800 border-red-200'},
+{limite:Infinity,nome:'Obesidade grau III',descricao:'O resultado está na faixa de obesidade grau III. Busque acompanhamento profissional.',id:'row-obesidade3',cor:'bg-purple-50 text-purple-800 border-purple-200'}];
+function parseValor(v){return parseFloat((v||'').trim().replace(',','.'))}
+function calcular(event){event.preventDefault();const peso=parseValor(document.getElementById('peso').value);let altura=parseValor(document.getElementById('altura').value);const erro=document.getElementById('error-alert');erro.classList.add('hidden');
+if(!Number.isFinite(peso)||peso<=0){mostrarErro('Informe um peso válido maior que zero.');return}
+if(!Number.isFinite(altura)||altura<=0){mostrarErro('Informe uma altura válida maior que zero.');return}
+if(altura>3)altura/=100;if(altura<.5||altura>2.8){mostrarErro('A altura deve estar entre 0,5 m e 2,8 m.');return}
+if(peso<10||peso>500){mostrarErro('Informe um peso coerente para adultos.');return}
+const imc=peso/(altura*altura);const cat=categorias.find(c=>imc<c.limite);document.getElementById('imc-value').textContent=imc.toFixed(1).replace('.',',');document.getElementById('imc-classification').textContent=cat.nome;document.getElementById('imc-description').textContent=cat.descricao;
+const badge=document.getElementById('status-badge');badge.className='px-4 py-2 rounded-xl text-sm font-bold border '+cat.cor;
+categorias.forEach(c=>{const row=document.getElementById(c.id);row.className='category-row';});document.getElementById(cat.id).className='category-row active-category '+cat.cor;
+document.getElementById('result-placeholder').classList.add('hidden');document.getElementById('result-content').classList.remove('hidden')}
+function mostrarErro(msg){document.getElementById('error-message').textContent=msg;document.getElementById('error-alert').classList.remove('hidden');document.getElementById('result-content').classList.add('hidden');document.getElementById('result-placeholder').classList.remove('hidden');categorias.forEach(c=>document.getElementById(c.id).className='category-row')}
+function resetCalculator(){document.getElementById('imc-form').reset();document.getElementById('error-alert').classList.add('hidden');document.getElementById('result-content').classList.add('hidden');document.getElementById('result-placeholder').classList.remove('hidden');categorias.forEach(c=>document.getElementById(c.id).className='category-row')}
+document.getElementById('imc-form').addEventListener('submit',calcular);
+</script></body></html>

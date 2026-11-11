@@ -1,7 +1,7 @@
 # AT3 — Calculadora de IMC
 
 ## Descrição
-Calculadora de Índice de Massa Corporal para adultos, entregue originalmente no arquivo `Calculadora de IMC.zip`.
+Calculadora de Índice de Massa Corporal para adultos, recebida originalmente no arquivo `Calculadora de IMC.zip`.
 
 ## Funcionalidades
 - Entrada de peso em quilogramas e altura em metros ou centímetros.
@@ -25,6 +25,6 @@ Prática de manipulação de formulários, validação de entradas, conversão d
 Não foi localizado no pacote um registro específico de ferramentas ou prompts de IA. Completar esta seção caso tenha havido copilotagem. O resultado é informativo e não substitui avaliação profissional.
 
 ## Deploy e execução
-Não foi informado um deploy público. Extraia o ZIP e abra `Calculadora de IMC.html` em um navegador com acesso à internet para carregar as dependências CDN.
+Não foi informado um deploy público. Abra `Calculadora de IMC.html` em um navegador com acesso à internet para carregar as dependências CDN.
 
 [← Voltar ao portfólio](../README.md)
