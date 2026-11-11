@@ -1,38 +1,44 @@
 # Alexsander Rosa Ribeiro — Portfólio Acadêmico
 
-Bem-vindo ao meu portfólio acadêmico! Este repositório reúne atividades práticas e projetos desenvolvidos durante minha formação em **Análise e Desenvolvimento de Sistemas (ADS)**. Aqui documento minha evolução, experiências com desenvolvimento web e aprendizados ao longo das atividades.
+Bem-vindo ao meu portfólio! Este repositório reúne projetos e atividades desenvolvidos durante minha formação em **Análise e Desenvolvimento de Sistemas (ADS)**. Aqui apresento um pouco do que venho aprendendo e praticando na área de desenvolvimento.
 
 ## Sobre mim
 
-Sou estudante de **Análise e Desenvolvimento de Sistemas** e utilizo este portfólio para apresentar minha trajetória acadêmica e prática em tecnologia.
+Sou estudante do **3º semestre de Análise e Desenvolvimento de Sistemas na Universidade Cidade de São Paulo (UNICID)**, com previsão de conclusão em **dezembro de 2027**.
 
-> **Esta seção será personalizada com minhas informações.** Os dados abaixo ainda precisam ser confirmados por mim antes da versão final.
+Meu interesse por tecnologia começou a partir do contato com computadores no ambiente de trabalho. Escolhi o curso por curiosidade e, ao longo da formação, venho conhecendo melhor o universo da programação. Gosto especialmente da área de desenvolvimento e estou aproveitando essa etapa para aprender, experimentar e descobrir em qual caminho da tecnologia quero me aprofundar.
 
-- **Instituição de ensino:** a informar
-- **Período / semestre atual:** a informar
-- **Cidade / estado (opcional):** a informar
-- **Área(s) de interesse:** a informar
-- **Objetivo profissional:** a informar
-- **Habilidades técnicas:** a confirmar
-- **Experiências profissionais ou projetos extracurriculares:** a informar
+Ainda estou explorando as diferentes possibilidades profissionais da área, sem ter definido uma especialização ou um objetivo profissional específico. Neste momento, meu foco é continuar aprendendo e desenvolvendo meus conhecimentos.
 
-## Contato e links profissionais
+Considero a **organização** e a **persistência** alguns dos meus pontos fortes. Gosto de trabalhar em equipe, dependendo da atividade e do contexto.
+
+## Formação
+
+- **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
+- **Instituição:** Universidade Cidade de São Paulo (UNICID)
+- **Período atual:** 3º semestre
+- **Previsão de conclusão:** dezembro de 2027
+
+## Conhecimentos técnicos
+
+Atualmente, estou desenvolvendo conhecimentos básicos nas seguintes tecnologias e ferramentas:
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Python
+- Java
+- Banco de dados e SQL
+- Git e GitHub
+
+Também tive contato, por meio das atividades deste portfólio, com recursos como Tailwind CSS, Chart.js, Font Awesome e Google Fonts.
+
+## Contato
 
 - **GitHub:** [@alexsander1997ribeiro](https://github.com/alexsander1997ribeiro)
-- **LinkedIn:** a informar (opcional)
-- **E-mail profissional:** a informar (opcional; só será publicado com minha autorização)
-- **Currículo:** a informar (opcional)
-
-## Tecnologias e ferramentas
-
-Tecnologias identificadas nos projetos atualmente documentados neste repositório:
-
-- **Desenvolvimento web:** HTML5, CSS3 e JavaScript.
-- **Frameworks e bibliotecas:** Bootstrap, Tailwind CSS, Chart.js e Font Awesome.
-- **Fontes e recursos visuais:** Google Fonts.
-- **Versionamento e publicação:** Git, GitHub e GitHub Pages.
-
-Minhas ferramentas favoritas e aquelas que utilizo com mais frequência serão incluídas após eu confirmar minhas preferências.
+- **E-mail:** [alexsander97ribeiro@outlook.com](mailto:alexsander97ribeiro@outlook.com)
+- **LinkedIn:** não informado
 
 ## Projetos acadêmicos
 
@@ -56,7 +62,7 @@ Minhas ferramentas favoritas e aquelas que utilizo com mais frequência serão i
 └── README.md
 ```
 
-Cada pasta de atividade possui um README próprio com objetivo, contexto, tecnologias, aprendizados, informações sobre o uso de IA e links de acesso, conforme os materiais disponíveis.
+Cada pasta de atividade possui um README próprio com informações sobre o objetivo, o contexto, as tecnologias utilizadas, os aprendizados, o uso de inteligência artificial e os links de acesso, conforme os materiais disponíveis.
 
 ## Uso responsável de inteligência artificial
 
@@ -65,4 +71,4 @@ Quando ferramentas de inteligência artificial são utilizadas nos projetos, sua
 ---
 
 **Alexsander Rosa Ribeiro**  
-[GitHub](https://github.com/alexsander1997ribeiro)
+[GitHub](https://github.com/alexsander1997ribeiro) · [E-mail](mailto:alexsander97ribeiro@outlook.com)
