@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym - Aulas e Eventos</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #121212; color: #fff; }
+        header { background: #000; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #ff4500; height: 70px; }
+        .logo { font-size: 24px; font-weight: bold; color: #ff4500; text-transform: uppercase; }
+        
+        nav ul { list-style: none; display: flex; }
+        nav ul li { position: relative; }
+        nav ul li a { color: #fff; text-decoration: none; padding: 25px 20px; display: block; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav ul li a:hover, nav ul li a.active { background: #1e1e1e; color: #ff4500; }
+        nav ul li .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #1e1e1e; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); z-index: 100; border-top: 2px solid #ff4500; }
+        nav ul li .dropdown a { padding: 12px 16px; text-transform: none; font-weight: normal; border-bottom: 1px solid #2d2d2d; }
+        nav ul li .dropdown a:hover { background: #2d2d2d; color: #ff4500; }
+        nav ul li:hover .dropdown { display: block; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        h1, h2 { color: #ff4500; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 40px; background: #1e1e1e; }
+        th, td { padding: 12px; text-align: left; border: 1px solid #333; }
+        th { background: #ff4500; color: #fff; }
+        .box { background: #1e1e1e; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #ff4500; }
+        footer { background: #000; text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">FitLife Gym</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li>
+                    <a href="sobre.html">Sobre &#9662;</a>
+                    <div class="dropdown">
+                        <a href="sobre.html#historia">Nossa História</a>
+                        <a href="sobre.html#estrutura">Estrutura</a>
+                        <a href="sobre.html#equipe">Nossa Equipe</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="produtos.html">Planos e Produtos &#9662;</a>
+                    <div class="dropdown">
+                        <a href="produtos.html#planos">Planos de Acesso</a>
+                        <a href="produtos.html#suplementos">Suplementos</a>
+                        <a href="produtos.html#acessorios">Acessórios</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="eventos.html" class="active">Aulas e Eventos &#9662;</a>
+                    <div class="dropdown">
+                        <a href="eventos.html#modalidades">Modalidades</a>
+                        <a href="eventos.html#horarios">Grade de Horários</a>
+                        <a href="eventos.html#eventos">Próximos Eventos</a>
+                    </div>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 id="modalidades">Modalidades Coletivas</h1>
+        <div class="box">
+            <p>Oferecemos aulas dinâmicas como **Spinning, Cross Training, FitDance, Pilates e Muay Thai**, preparadas para todos os níveis de condicionamento.</p>
+        </div>
+
+        <h2 id="horarios">Grade de Horários</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda e Quarta</th>
+                    <th>Terça e Quinta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>07:00 - 08:00</td>
+                    <td>Spinning</td>
+                    <td>Cross Training</td>
+                </tr>
+                <tr>
+                    <td>19:00 - 20:00</td>
+                    <td>FitDance</td>
+                    <td>Muay Thai</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="eventos">Próximos Eventos</h2>
+        <div class="box">
+            <h3>Desafio FitLife 30 Dias</h3>
+            <p>Competição de transformação física com acompanhamento nutricional e prêmios para os vencedores.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FitLife Gym. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

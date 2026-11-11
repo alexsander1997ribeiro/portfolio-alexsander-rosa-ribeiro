@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym - Sobre Nós</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #121212; color: #fff; }
+        header { background: #000; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #ff4500; height: 70px; }
+        .logo { font-size: 24px; font-weight: bold; color: #ff4500; text-transform: uppercase; }
+        
+        nav ul { list-style: none; display: flex; }
+        nav ul li { position: relative; }
+        nav ul li a { color: #fff; text-decoration: none; padding: 25px 20px; display: block; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav ul li a:hover, nav ul li a.active { background: #1e1e1e; color: #ff4500; }
+        nav ul li .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #1e1e1e; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); z-index: 100; border-top: 2px solid #ff4500; }
+        nav ul li .dropdown a { padding: 12px 16px; text-transform: none; font-weight: normal; border-bottom: 1px solid #2d2d2d; }
+        nav ul li .dropdown a:hover { background: #2d2d2d; color: #ff4500; }
+        nav ul li:hover .dropdown { display: block; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .section-block { background: #1e1e1e; padding: 30px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #ff4500; }
+        h1 { color: #ff4500; margin-bottom: 20px; }
+        h2 { color: #fff; margin-bottom: 10px; }
+        p { color: #ccc; line-height: 1.6; }
+        footer { background: #000; text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">FitLife Gym</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li>
+                    <a href="sobre.html" class="active">Sobre &#9662;</a>
+                    <div class="dropdown">
+                        <a href="sobre.html#historia">Nossa História</a>
+                        <a href="sobre.html#estrutura">Estrutura</a>
+                        <a href="sobre.html#equipe">Nossa Equipe</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="produtos.html">Planos e Produtos &#9662;</a>
+                    <div class="dropdown">
+                        <a href="produtos.html#planos">Planos de Acesso</a>
+                        <a href="produtos.html#suplementos">Suplementos</a>
+                        <a href="produtos.html#acessorios">Acessórios</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="eventos.html">Aulas e Eventos &#9662;</a>
+                    <div class="dropdown">
+                        <a href="eventos.html#modalidades">Modalidades</a>
+                        <a href="eventos.html#horarios">Grade de Horários</a>
+                        <a href="eventos.html#eventos">Próximos Eventos</a>
+                    </div>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Conheça a FitLife Gym</h1>
+
+        <div class="section-block" id="historia">
+            <h2>Nossa História</h2>
+            <p>Fundada em 2018, a FitLife nasceu com o objetivo de oferecer uma experiência completa de saúde e condicionamento físico. Ao longo dos anos, nos tornamos referência em infraestrutura de treino e atendimento humanizado.</p>
+        </div>
+
+        <div class="section-block" id="estrutura">
+            <h2>Nossa Estrutura</h2>
+            <p>Mais de 1.200m² climatizados, ambiente equipado com aparelhos importados de biomecânica avançada, espaço exclusivo para treinamento funcional, tatame para lutas e vestiários modernos.</p>
+        </div>
+
+        <div class="section-block" id="equipe">
+            <h2>Nossa Equipe</h2>
+            <p>Contamos com profissionais graduados em Educação Física, especialistas em treinamento de força, reabilitação e preparação física funcional.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FitLife Gym. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

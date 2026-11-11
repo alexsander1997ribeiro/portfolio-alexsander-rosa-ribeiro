@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym - Contato</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #121212; color: #fff; }
+        header { background: #000; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #ff4500; height: 70px; }
+        .logo { font-size: 24px; font-weight: bold; color: #ff4500; text-transform: uppercase; }
+        
+        nav ul { list-style: none; display: flex; }
+        nav ul li { position: relative; }
+        nav ul li a { color: #fff; text-decoration: none; padding: 25px 20px; display: block; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav ul li a:hover, nav ul li a.active { background: #1e1e1e; color: #ff4500; }
+        nav ul li .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #1e1e1e; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); z-index: 100; border-top: 2px solid #ff4500; }
+        nav ul li .dropdown a { padding: 12px 16px; text-transform: none; font-weight: normal; border-bottom: 1px solid #2d2d2d; }
+        nav ul li .dropdown a:hover { background: #2d2d2d; color: #ff4500; }
+        nav ul li:hover .dropdown { display: block; }
+
+        .container { max-width: 600px; margin: 40px auto; padding: 0 20px; }
+        h1 { color: #ff4500; margin-bottom: 20px; text-align: center; }
+        form { background: #1e1e1e; padding: 30px; border-radius: 8px; border-top: 3px solid #ff4500; }
+        .field { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; color: #ccc; }
+        input, select, textarea { width: 100%; padding: 10px; background: #2a2a2a; border: 1px solid #444; color: #fff; border-radius: 4px; }
+        button { width: 100%; padding: 12px; background: #ff4500; color: #fff; border: none; font-weight: bold; border-radius: 4px; cursor: pointer; text-transform: uppercase; }
+        button:hover { background: #e03e00; }
+        footer { background: #000; text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #222; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">FitLife Gym</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li>
+                    <a href="sobre.html">Sobre &#9662;</a>
+                    <div class="dropdown">
+                        <a href="sobre.html#historia">Nossa História</a>
+                        <a href="sobre.html#estrutura">Estrutura</a>
+                        <a href="sobre.html#equipe">Nossa Equipe</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="produtos.html">Planos e Produtos &#9662;</a>
+                    <div class="dropdown">
+                        <a href="produtos.html#planos">Planos de Acesso</a>
+                        <a href="produtos.html#suplementos">Suplementos</a>
+                        <a href="produtos.html#acessorios">Acessórios</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="eventos.html">Aulas e Eventos &#9662;</a>
+                    <div class="dropdown">
+                        <a href="eventos.html#modalidades">Modalidades</a>
+                        <a href="eventos.html#horarios">Grade de Horários</a>
+                        <a href="eventos.html#eventos">Próximos Eventos</a>
+                    </div>
+                </li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Fale Conosco</h1>
+        <form action="#" method="post">
+            <div class="field">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" required placeholder="Seu nome">
+            </div>
+            <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required placeholder="seuemail@exemplo.com">
+            </div>
+            <div class="field">
+                <label for="assunto">Assunto</label>
+                <select id="assunto">
+                    <option>Agendar Aula Experimental</option>
+                    <option>Dúvidas sobre Planos</option>
+                    <option>Sugestões</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FitLife Gym. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

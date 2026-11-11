@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym - Planos e Produtos</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #121212; color: #fff; }
+        header { background: #000; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #ff4500; height: 70px; }
+        .logo { font-size: 24px; font-weight: bold; color: #ff4500; text-transform: uppercase; }
+        
+        nav ul { list-style: none; display: flex; }
+        nav ul li { position: relative; }
+        nav ul li a { color: #fff; text-decoration: none; padding: 25px 20px; display: block; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav ul li a:hover, nav ul li a.active { background: #1e1e1e; color: #ff4500; }
+        nav ul li .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #1e1e1e; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); z-index: 100; border-top: 2px solid #ff4500; }
+        nav ul li .dropdown a { padding: 12px 16px; text-transform: none; font-weight: normal; border-bottom: 1px solid #2d2d2d; }
+        nav ul li .dropdown a:hover { background: #2d2d2d; color: #ff4500; }
+        nav ul li:hover .dropdown { display: block; }
+
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        h1, h2 { color: #ff4500; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .card { background: #1e1e1e; padding: 25px; border-radius: 8px; text-align: center; border: 1px solid #333; }
+        .card.highlight { border: 2px solid #ff4500; }
+        .price { font-size: 28px; color: #ff4500; font-weight: bold; margin: 15px 0; }
+        .btn { display: inline-block; background: #ff4500; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; }
+        footer { background: #000; text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">FitLife Gym</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li>
+                    <a href="sobre.html">Sobre &#9662;</a>
+                    <div class="dropdown">
+                        <a href="sobre.html#historia">Nossa História</a>
+                        <a href="sobre.html#estrutura">Estrutura</a>
+                        <a href="sobre.html#equipe">Nossa Equipe</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="produtos.html" class="active">Planos e Produtos &#9662;</a>
+                    <div class="dropdown">
+                        <a href="produtos.html#planos">Planos de Acesso</a>
+                        <a href="produtos.html#suplementos">Suplementos</a>
+                        <a href="produtos.html#acessorios">Acessórios</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="eventos.html">Aulas e Eventos &#9662;</a>
+                    <div class="dropdown">
+                        <a href="eventos.html#modalidades">Modalidades</a>
+                        <a href="eventos.html#horarios">Grade de Horários</a>
+                        <a href="eventos.html#eventos">Próximos Eventos</a>
+                    </div>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 id="planos">Planos de Acesso</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>Plano Mensal</h3>
+                <div class="price">R$ 119,90/mês</div>
+                <p>Acesso livre à musculação e área cardio.</p>
+                <a href="contato.html" class="btn" style="margin-top:15px;">Matricular-se</a>
+            </div>
+            <div class="card highlight">
+                <h3>Plano VIP Anual</h3>
+                <div class="price">R$ 89,90/mês</div>
+                <p>Musculação + Todas as Aulas Coletivas + Cadeira de Massagem.</p>
+                <a href="contato.html" class="btn" style="margin-top:15px;">Matricular-se</a>
+            </div>
+        </div>
+
+        <h2 id="suplementos">Suplementos na Loja</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Whey Protein 900g</h3>
+                <p>Proteína concentrada de alto valor biológico.</p>
+                <div class="price">R$ 120,00</div>
+            </div>
+            <div class="card">
+                <h3>Creatina Monohidratada</h3>
+                <p>Aumento de força e potência muscular.</p>
+                <div class="price">R$ 89,90</div>
+            </div>
+        </div>
+
+        <h2 id="acessorios">Acessórios de Treino</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Coqueteleira 700ml</h3>
+                <div class="price">R$ 25,00</div>
+            </div>
+            <div class="card">
+                <h3>Strap Profissional</h3>
+                <div class="price">R$ 35,00</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FitLife Gym. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
