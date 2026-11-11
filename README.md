@@ -6,7 +6,7 @@ Bem-vindo ao meu portfólio! Este repositório reúne projetos e atividades dese
 
 Sou estudante do **3º semestre de Análise e Desenvolvimento de Sistemas na Universidade Cidade de São Paulo (UNICID)**, com previsão de conclusão em **dezembro de 2027**.
 
-Meu interesse por tecnologia começou a partir do contato com computadores no ambiente de trabalho. Escolhi o curso por curiosidade e, ao longo da formação, venho conhecendo melhor o universo da programação. Gosto especialmente da área de desenvolvimento e estou aproveitando essa etapa para aprender, experimentar e descobrir em qual caminho da tecnologia quero me aprofundar.
+Meu interesse por tecnologia começou a partir do contato com computadores no ambiente de trabalho, em atividades de atendimento. Escolhi o curso por curiosidade e, ao longo da formação, venho conhecendo melhor o universo da programação. Gosto especialmente da área de desenvolvimento e tenho interesse em explorar diferentes possibilidades: criar sites e interfaces, desenvolver sistemas e aplicativos, resolver problemas com código e até criar jogos. Ainda estou conhecendo essas áreas e gosto um pouco de tudo.
 
 Ainda estou explorando as diferentes possibilidades profissionais da área, sem ter definido uma especialização ou um objetivo profissional específico. Neste momento, meu foco é continuar aprendendo e desenvolvendo meus conhecimentos.
 
@@ -37,8 +37,8 @@ Também tive contato, por meio das atividades deste portfólio, com recursos com
 ## Contato
 
 - **GitHub:** [@alexsander1997ribeiro](https://github.com/alexsander1997ribeiro)
+- **LinkedIn:** [alexsander-ribeiro](https://www.linkedin.com/in/alexsander-ribeiro-aa3296247)
 - **E-mail:** [alexsander97ribeiro@outlook.com](mailto:alexsander97ribeiro@outlook.com)
-- **LinkedIn:** não informado
 
 ## Projetos acadêmicos
 
@@ -71,4 +71,4 @@ Quando ferramentas de inteligência artificial são utilizadas nos projetos, sua
 ---
 
 **Alexsander Rosa Ribeiro**  
-[GitHub](https://github.com/alexsander1997ribeiro) · [E-mail](mailto:alexsander97ribeiro@outlook.com)
+[GitHub](https://github.com/alexsander1997ribeiro) · [LinkedIn](https://www.linkedin.com/in/alexsander-ribeiro-aa3296247) · [E-mail](mailto:alexsander97ribeiro@outlook.com)
