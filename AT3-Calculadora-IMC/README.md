@@ -1,20 +1,36 @@
 # AT3 — Calculadora de IMC
 
-## Objetivo
-Atividade de desenvolvimento de uma calculadora de Índice de Massa Corporal (IMC).
+Calculadora de Índice de Massa Corporal para adultos, entregue no arquivo `Calculadora de IMC.zip`.
 
-## Funcionamento esperado
-A aplicação deve receber peso e altura informados pelo usuário, calcular o IMC e apresentar o resultado. Os dados de entrada devem ser validados para evitar valores inválidos.
+## Funcionalidades identificadas
 
-## Tecnologias previstas
-- HTML para a estrutura.
-- CSS para a apresentação visual.
-- JavaScript para validação e cálculo.
+- Entrada de peso em quilogramas.
+- Entrada de altura em metros ou centímetros.
+- Aceita vírgula ou ponto como separador decimal.
+- Valida valores e apresenta mensagens de erro para entradas inválidas.
+- Calcula o IMC pela fórmula peso / altura².
+- Exibe o resultado com uma classificação e uma descrição.
+- Destaca a faixa correspondente em uma tabela de referência para adultos.
+- Botão para limpar os campos e reiniciar o resultado.
 
-## Arquivos da atividade
-No momento da atualização, esta pasta contém apenas este README. O código-fonte ainda precisa ser adicionado para que a calculadora possa ser executada.
+## Tecnologias
+
+- HTML5.
+- JavaScript para validação, cálculo e atualização dinâmica da interface.
+- Tailwind CSS via CDN para estilos utilitários.
+- Font Awesome para ícones.
+- Fonte Inter via Google Fonts.
+
+## Como executar
+
+Extraia o arquivo ZIP e abra `Calculadora de IMC.html` em um navegador com acesso à internet para carregar as dependências CDN.
+
+## Observação
+
+A página informa que a ferramenta tem caráter educativo/informativo e não substitui a avaliação de um médico ou nutricionista.
 
 ## Autor
+
 Alexsander Rosa Ribeiro
 
 [← Voltar ao portfólio](../README.md)

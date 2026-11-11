@@ -1,21 +1,33 @@
-# AT2 — Deploy de Site
+# AT2 — Deploy de Site: FitLife Academia
 
-## Objetivo
-Atividade relacionada à publicação de um site na internet e à compreensão do fluxo de deploy.
+Projeto de site para uma academia fictícia, publicado pelo GitHub Pages.
 
-## Etapas previstas
-1. Organizar os arquivos do site.
-2. Versionar o projeto em um repositório GitHub.
-3. Configurar a hospedagem, por exemplo, pelo GitHub Pages.
-4. Verificar o endereço público após a publicação.
+## Acessos
 
-## Resultado / link publicado
-O endereço de deploy não está registrado nesta pasta. Não foi incluído um link presumido.
+- **Demonstração publicada:** https://alexsander1997ribeiro.github.io/academia/
+- **Repositório com o código-fonte:** https://github.com/alexsander1997ribeiro/academia
 
-## Arquivos da atividade
-No momento da atualização, esta pasta contém apenas este README. Adicione aqui os arquivos e evidências da publicação para completar a entrega.
+## Estrutura do site
+
+- `index.html` — página inicial, apresentação da academia e destaques.
+- `sobre.html` — história, estrutura e equipe.
+- `produtos.html` — planos de acesso, suplementos e acessórios.
+- `eventos.html` — modalidades coletivas, grade de horários e eventos.
+- `contato.html` — formulário de contato.
+
+## Recursos identificados
+
+- Navegação entre páginas e menus suspensos com links para seções internas.
+- Layout com fundo escuro e destaque em laranja.
+- Cards para planos e produtos, tabela de horários e formulário.
+- Estilos CSS incorporados nas páginas HTML.
+
+## Como visualizar
+
+Acesse o link de demonstração acima ou clone o repositório e abra `index.html` no navegador.
 
 ## Autor
+
 Alexsander Rosa Ribeiro
 
 [← Voltar ao portfólio](../README.md)
