@@ -1,22 +1,40 @@
 # Alexsander Rosa Ribeiro — Portfólio Acadêmico
 
-Portfólio de atividades práticas de desenvolvimento web do curso de **Análise e Desenvolvimento de Sistemas (ADS)**. Reúne projetos individuais, exercícios de implementação, publicação de sites e um trabalho colaborativo.
+Bem-vindo ao meu portfólio acadêmico! Este repositório reúne atividades práticas e projetos desenvolvidos durante minha formação em **Análise e Desenvolvimento de Sistemas (ADS)**. Aqui documento minha evolução, experiências com desenvolvimento web e aprendizados ao longo das atividades.
 
-## Sobre
-Sou estudante de Análise e Desenvolvimento de Sistemas e utilizo este espaço para documentar minha evolução em desenvolvimento front-end, organização de projetos, interfaces web e versionamento.
+## Sobre mim
 
-- **Curso:** Análise e Desenvolvimento de Sistemas (ADS)
+Sou estudante de **Análise e Desenvolvimento de Sistemas** e utilizo este portfólio para apresentar minha trajetória acadêmica e prática em tecnologia.
+
+> **Esta seção será personalizada com minhas informações.** Os dados abaixo ainda precisam ser confirmados por mim antes da versão final.
+
+- **Instituição de ensino:** a informar
+- **Período / semestre atual:** a informar
+- **Cidade / estado (opcional):** a informar
+- **Área(s) de interesse:** a informar
+- **Objetivo profissional:** a informar
+- **Habilidades técnicas:** a confirmar
+- **Experiências profissionais ou projetos extracurriculares:** a informar
+
+## Contato e links profissionais
+
 - **GitHub:** [@alexsander1997ribeiro](https://github.com/alexsander1997ribeiro)
-- **LinkedIn, e-mail profissional e currículo:** adicionar links atualizados antes da divulgação pública.
-- **Instituição e período:** não informados nesta versão.
+- **LinkedIn:** a informar (opcional)
+- **E-mail profissional:** a informar (opcional; só será publicado com minha autorização)
+- **Currículo:** a informar (opcional)
 
-## Ferramentas e tecnologias presentes nos projetos
-- **Front-end:** HTML5, CSS3, JavaScript, Bootstrap e Tailwind CSS.
-- **Bibliotecas e recursos:** Chart.js, Font Awesome e Google Fonts.
+## Tecnologias e ferramentas
+
+Tecnologias identificadas nos projetos atualmente documentados neste repositório:
+
+- **Desenvolvimento web:** HTML5, CSS3 e JavaScript.
+- **Frameworks e bibliotecas:** Bootstrap, Tailwind CSS, Chart.js e Font Awesome.
+- **Fontes e recursos visuais:** Google Fonts.
 - **Versionamento e publicação:** Git, GitHub e GitHub Pages.
-- **IA e dados:** uso documentado na AT5; consulte o relatório de auditoria incluído no projeto.
 
-## Projetos
+Minhas ferramentas favoritas e aquelas que utilizo com mais frequência serão incluídas após eu confirmar minhas preferências.
+
+## Projetos acadêmicos
 
 | Atividade | Projeto | Descrição | Código / demonstração |
 |---|---|---|---|
@@ -26,7 +44,8 @@ Sou estudante de Análise e Desenvolvimento de Sistemas e utilizo este espaço p
 | AT4 | Mente Saudável | Site educativo multipáginas sobre saúde mental e bem-estar, com Bootstrap. | [Código](./AT4-Site-Multi-Paginas-Bootstrap/) · [Repositório original](https://github.com/alexsander1997ribeiro/site-saude-mental) |
 | AT5 | Expatriados de Sofá | Projeto colaborativo sobre solidão e trabalho remoto internacional. | [Código](./AT5-Front-End-Copilotado-com-IA/) · [Deploy](https://rrenatodevs.github.io/Projeto-em-Dupla/) |
 
-## Estrutura
+## Organização do repositório
+
 ```text
 .
 ├── AT1-Paginas-HTML/
@@ -37,10 +56,13 @@ Sou estudante de Análise e Desenvolvimento de Sistemas e utilizo este espaço p
 └── README.md
 ```
 
-Cada pasta de atividade possui documentação própria com objetivo, tecnologias, aprendizados, uso responsável de IA e acesso ao projeto quando disponível.
+Cada pasta de atividade possui um README próprio com objetivo, contexto, tecnologias, aprendizados, informações sobre o uso de IA e links de acesso, conforme os materiais disponíveis.
 
 ## Uso responsável de inteligência artificial
-Quando ferramentas de IA forem utilizadas, suas contribuições devem ser revisadas, testadas e compreendidas pelo estudante. A documentação distingue o que está registrado nos arquivos de origem do que ainda precisa ser complementado pelo autor.
+
+Quando ferramentas de inteligência artificial são utilizadas nos projetos, suas contribuições devem ser identificadas, revisadas e testadas. A responsabilidade pelo entendimento, validação e apresentação do trabalho permanece comigo. As documentações individuais registram o uso de IA de acordo com as evidências disponíveis em cada atividade.
 
 ---
-**Alexsander Rosa Ribeiro** · [GitHub](https://github.com/alexsander1997ribeiro)
+
+**Alexsander Rosa Ribeiro**  
+[GitHub](https://github.com/alexsander1997ribeiro)
